@@ -7,11 +7,24 @@ Implemented as docker container image will all necessary fonts for supporting fu
 Works for all cloud services that supports containers
 
 ## Run locally
+
 ```sh
 npm run dev
 ```
 
-## Test scenarios
+Simple test to see if working in the browser `http://localhost:3000/api/generate?html=hello`
+
+Full test can be done with an REST API Client like [Bruno](https://www.usebruno.com/) or [Postman](https://www.postman.com/product/api-client/)
+
+```http
+POST http://localhost:3000/api/generate
+Content-Type: application/json
+{ 
+    "html": "<h1>Hello world</h1><p>🤡👽😂🥱😡😰🤮</p>"
+}
+```
+
+## More Test scenarios for Unicode support
 
 😂😁😂😂 🤡👽😂🥱😡😰🤮😷💩😺🫶🏽✊🏾👩🏿‍🦰🐺🐬🐖🐏🐈🐠🌝🌪️⚽
 

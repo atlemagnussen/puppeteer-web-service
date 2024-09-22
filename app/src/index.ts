@@ -11,7 +11,7 @@ import { generate } from "./generator"
 //import * as fs from "fs/promises" // for debugging incoming HTML
 
 // App constants
-const host = "::"
+const host = "::" // listen to all IPs both IPv4 and IPv6
 let port = 3000
 if ((process.env.PORT))
     port = parseInt(process.env.PORT)
