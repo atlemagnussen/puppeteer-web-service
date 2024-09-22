@@ -11,7 +11,11 @@ import { generate } from "./generator"
 //import * as fs from "fs/promises" // for debugging incoming HTML
 
 // App constants
-const port = process.env.PORT || 3000
+const host = "::"
+let port = 3000
+if ((process.env.PORT))
+    port = parseInt(process.env.PORT)
+
 const apiPrefix = '/api'
   
 // Create the Express app & setup middlewares
@@ -90,6 +94,6 @@ async function handle(res: Response, html: string, options?: ExportOptions) {
 app.use(apiPrefix, router)
 
 // Start the server
-app.listen(port, () => {
-    console.log(`Server listening on port ${port}`)
+app.listen(port, host, () => {
+    console.log(`Server listening on http://${host}:${port}`)
 })
