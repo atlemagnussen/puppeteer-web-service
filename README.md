@@ -8,6 +8,11 @@ Works for all cloud services that supports containers
 
 ## Run locally
 
+You need Google-Chrome or Chromium installed.
+
+Since `app/src/generator.ts` is hard coded to point to `executablePath: '/usr/bin/google-chrome'` to work in a docker container
+It will also work locally on Linux debian based distro. For other distros, MacOS and Windows you probably need to to change `executablePath` 
+
 ```sh
 npm run dev
 ```
@@ -23,6 +28,9 @@ Content-Type: application/json
     "html": "<h1>Hello world</h1><p>🤡👽😂🥱😡😰🤮</p>"
 }
 ```
+
+## Docker container
+see [DOCKER.md](./app/DOCKER.md)
 
 ## More Test scenarios for Unicode support
 

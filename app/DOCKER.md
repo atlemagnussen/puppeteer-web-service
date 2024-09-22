@@ -22,5 +22,5 @@ docker build --tag pdf-gen-app:v1.0 .
 
 Test
 ```sh
-docker run -p 3000:3000 pdf-gen-app:v1.0
+docker run -d -p 3000:3000 pdf-gen-app:v1.0
 ```
