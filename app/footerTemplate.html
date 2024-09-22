@@ -1,0 +1,43 @@
+<style>
+    section.pdf-footer {
+        width: 100%;
+        margin: 5px 1cm 0 1cm;
+        font-size: 9px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-part-slogan {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .center-wrapper {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-footer {
+        height: 20px;
+        width: 20px;
+    }
+</style>
+<!--Will not page number / total for each page plus your logo or something -->
+<section class="pdf-footer">
+    <div class="footer-part">
+        <span class="pageNumber"></span>
+        <span>/</span>
+        <span class="totalPages "></span>
+    </div>
+    <div class="footer-part-slogan">
+        <div class="center-wrapper">
+            <span>Your logo</span>
+        </div>
+        <span>&nbsp;</span>
+        <div class="center-wrapper">
+            <label class="slogan">&quot;Together we improve tomorrow&quot;</label>
+        </div>
+    </div>
+</section>
