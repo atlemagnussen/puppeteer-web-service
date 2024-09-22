@@ -45,7 +45,6 @@ export async function generate(html: string, options?: ExportOptions): Promise<G
 
     let finalOpts = cloneDeep(defaultOptions) as ExportOptions
     
-
     if (options) {
         console.log("incoming options", options)
         finalOpts = merge(finalOpts, options)
