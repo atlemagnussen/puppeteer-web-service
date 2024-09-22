@@ -46,10 +46,7 @@ Content-Type: application/json
 { 
     "html": "<h1>Hello IMAGE</h1><p>🤡👽😂🥱😡😰🤮</p>",
     "options": {
-        "fileType": "image",
-        "imageOptions": {
-            "type": "png"
-        }
+        "fileType": "image"
     }
 }
 ```
