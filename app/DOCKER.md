@@ -1,11 +1,10 @@
-# Puppeteer as a web service in docker container
-
-using [Node.js](https://nodejs.org/) and [Express.js](https://expressjs.com/) for the Web API
+# Puppeteer web service Docker container
 
 
 ## Build
 
 ```sh
+cd app
 docker build --tag pdf-gen-app:v1.0 .
 
 ```
