@@ -1,5 +1,8 @@
 # Puppeteer web service Docker container
 
+The [DockerFile](./Dockerfile) will install the latest stable version of Google Chrome in the container. And then run the puppeteer web service.
+
+PORT is overridable as environment variable
 
 ## Build
 
